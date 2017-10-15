@@ -1,0 +1,61 @@
+
+.alef-card-container {
+    height: 260px;
+    perspective: 600px;
+    position: relative;
+}
+.alef-card {
+    cursor: pointer;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 300ms ease-in;
+    height: 100%;
+    width: 230px;
+    box-shadow: 1px 1px 5px gray;
+}
+.alef-card-back {
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+    cursor: default;
+}
+
+
+.flip-alef-card {
+    transform: rotateY(180deg);
+    transition: all 300ms ease-in;
+}
+.alef-card .side {
+    backface-visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+
+.alef-card-info {
+    background-color: white;
+    padding: 5px 13px;
+    height: 40%;
+}
+
+.alef-card-description {
+    font-size: 0.9em;
+}
+
+
+.alef-card-bg {
+    height: 150px;
+}
+
+.alef-card-title {
+    padding: 10px;
+    background-color: rgba(1,1,1,0.5);
+    color: white;
+}
+
+.alef-card-play-button {
+    height: 100px;
+    margin-top: 30%;
+}

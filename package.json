@@ -1,0 +1,25 @@
+{
+  "name": "react-card-flippable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essaji/react-card-flippable.git"
+  },
+  "author": "Eesa <essaji44@gmail.com> (http://eesazblog.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/essaji/react-card-flippable/issues"
+  },
+  "homepage": "https://github.com/essaji/react-card-flippable#readme",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
