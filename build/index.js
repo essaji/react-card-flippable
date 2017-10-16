@@ -534,7 +534,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var DEFAULT_COLOR = "#0087cc";
+var DEFAULT_COLOR = "rgb(147, 204, 232)";
 
 var CardFlippable = function (_Component) {
     _inherits(CardFlippable, _Component);
@@ -619,8 +619,8 @@ var CardFlippable = function (_Component) {
                         { className: backCardClasses },
                         this.props.backChildren || _react2.default.createElement(
                             'div',
-                            { style: { backgroundColor: DEFAULT_COLOR, height: "100%", padding: "10px" } },
-                            'Card back content goes here'
+                            { style: { color: "white", backgroundColor: DEFAULT_COLOR, height: "100%", padding: "10px" } },
+                            'Click to flip again'
                         )
                     )
                 )

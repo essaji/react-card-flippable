@@ -14,8 +14,6 @@
     box-shadow: 1px 1px 5px gray;
 }
 .alef-card-back {
-    color: #0087cc;
-    line-height: 150px;
     text-align: center;
     transform: rotateY(180deg);
     cursor: default;
