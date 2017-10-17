@@ -579,7 +579,6 @@ exports.default = CardFlippable;
 
 
 CardFlippable.propTypes = {
-    link: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
     title: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
     description: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
     thumbnailUrl: _propTypes2.default.string,
