@@ -1,5 +1,9 @@
 # React Card Flippable
 
+## Installation
+
+`npm install react-card-flippable --save`
+
 
 ## Basic Usage
 
@@ -28,7 +32,7 @@ class App extends Component {
 
 See the [demo here](https://plnkr.co/edit/3QbdTUWfWjf4cVTzaJmx?p=preview)
 
-## Documentation
+## Properties
 
 | Props        | Type    | Description                                                                                               |
 |--------------|---------|-----------------------------------------------------------------------------------------------------------|
