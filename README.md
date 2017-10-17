@@ -36,5 +36,5 @@ See the [demo here](https://plnkr.co/edit/3QbdTUWfWjf4cVTzaJmx?p=preview)
 | description  | string  | Description to be displayed under the card                                                                |
 | thumbnailUrl | string  | Url to the image of the card                                                                              |
 | disableFlip  | boolean | Setting it to true disables the flip of card on click                                                     |
-| frontContent | object  | JSX content to be rendered on card front **Note**: using this prop will replace the default card behavior |
+| frontContent | object  | JSX content to be rendered on card front. <br> **Note**: using this prop will replace the default card behavior |
 | backContent  | object  | JSX content to be rendered on the back of the card                                                        |
