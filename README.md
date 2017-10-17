@@ -9,52 +9,23 @@ See the [demo here](https://plnkr.co/edit/3QbdTUWfWjf4cVTzaJmx?p=preview)
 
 ```javascript
 import React, {Component} from 'react';
-import './App.css';
 import CardFlippable from 'react-card-flippable';
 
 class App extends Component {
 
     render() {
 
-        let title = "Today News";
-        let description = "Today is nice weather in Abu Dhabi";
-        let thumbnailUrl = "http://oi65.tinypic.com/28unxug.jpg";
+        const title = "Today News";
+        const description = "Today is nice weather in Abu Dhabi";
+        const thumbnailUrl = "http://oi65.tinypic.com/28unxug.jpg";
+        const backContent = <div><h3>Click to flip back</h3></div>;
 
         return (
             <div>
-                <CardFlippable title={title} description={description} thumbnailUrl={thumbnailUrl}/>
+                <CardFlippable title={title} description={description} thumbnailUrl={thumbnailUrl} backContent={backContent} />
             </div>
         );
     }
 }
-
-export default App;
-
-
-```
-
-### Advance
-```javascript
-import React, {Component} from 'react';
-import CardFlippable from 'react-card-flippable';
-
-class App extends Component {
-
-    render() {
-
-        const frontContent = <div>Here goes the description</div>;
-        const backContent = <div>Here goes the info for the back card</div>;
-
-
-        return (
-            <div>
-                <CardFlippable frontContent={frontContent} backContent={backContent} />
-            </div>
-        );
-    }
-}
-
-export default App;
-
 
 ```

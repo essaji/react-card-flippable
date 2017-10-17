@@ -506,7 +506,10 @@ var CardFlippable = function (_Component) {
                 description = _props.description,
                 thumbnailUrl = _props.thumbnailUrl,
                 cardId = _props.cardId,
-                activeCardId = _props.activeCardId;
+                activeCardId = _props.activeCardId,
+                disableFlip = _props.disableFlip,
+                backContent = _props.backContent,
+                frontContent = _props.frontContent;
 
 
             var bgImageStyle = {
@@ -527,12 +530,12 @@ var CardFlippable = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { onClick: function onClick() {
-                            return _this2.toggleCard();
+                            if (!disableFlip) _this2.toggleCard();
                         }, className: cardClasses },
                     _react2.default.createElement(
                         'div',
                         { className: 'side' },
-                        this.props.frontContent || _react2.default.createElement(
+                        frontContent || _react2.default.createElement(
                             'div',
                             null,
                             _react2.default.createElement(
@@ -558,10 +561,10 @@ var CardFlippable = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { className: backCardClasses },
-                        this.props.backContent || _react2.default.createElement(
+                        backContent || _react2.default.createElement(
                             'div',
                             { style: { color: "white", backgroundColor: DEFAULT_COLOR, height: "100%", padding: "10px" } },
-                            'Click to flip again'
+                            'Click to flip back'
                         )
                     )
                 )

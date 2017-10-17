@@ -20,7 +20,7 @@ export default class CardFlippable extends Component {
 
     render() {
 
-        const {title, description, thumbnailUrl, cardId, activeCardId, } = this.props;
+        const {title, description, thumbnailUrl, cardId, activeCardId, disableFlip, backContent, frontContent } = this.props;
 
         let bgImageStyle = {
             backgroundRepeat: 'no-repeat',
@@ -39,9 +39,9 @@ export default class CardFlippable extends Component {
 
         return (
             <div className="alef-card-container">
-                <div onClick={() => this.toggleCard()} className={cardClasses}>
+                <div onClick={() => {if(!disableFlip) this.toggleCard()}} className={cardClasses}>
                     <div className="side">
-                        {this.props.frontContent || <div>
+                        {frontContent || <div>
                             <div style={bgImageStyle} className="alef-card-bg" >
                                 {title ? <div className="alef-card-title" >{title}</div> : null}
                             </div>
@@ -53,7 +53,7 @@ export default class CardFlippable extends Component {
                         </div>}
                     </div>
                     <div className={backCardClasses}>
-                        {this.props.backContent || <div style={{color: "white", backgroundColor: DEFAULT_COLOR, height: "100%", padding: "10px"}} >Click to flip again</div>}
+                        {backContent || <div style={{color: "white", backgroundColor: DEFAULT_COLOR, height: "100%", padding: "10px"}} >Click to flip back</div>}
                     </div>
                 </div>
             </div>
