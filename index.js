@@ -532,7 +532,7 @@ var CardFlippable = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'side' },
-                        this.props.frontChildren || _react2.default.createElement(
+                        this.props.frontContent || _react2.default.createElement(
                             'div',
                             null,
                             _react2.default.createElement(
@@ -558,7 +558,7 @@ var CardFlippable = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { className: backCardClasses },
-                        this.props.backChildren || _react2.default.createElement(
+                        this.props.backContent || _react2.default.createElement(
                             'div',
                             { style: { color: "white", backgroundColor: DEFAULT_COLOR, height: "100%", padding: "10px" } },
                             'Click to flip again'
@@ -582,7 +582,9 @@ CardFlippable.propTypes = {
     thumbnailUrl: _propTypes2.default.string,
     cardId: _propTypes2.default.string,
     setActiveCardId: _propTypes2.default.func,
-    activeCardId: _propTypes2.default.string
+    activeCardId: _propTypes2.default.string,
+    frontContent: _propTypes2.default.object,
+    backContent: _propTypes2.default.object
 };
 
 /***/ }),
