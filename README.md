@@ -1,11 +1,7 @@
 # React Card Flippable
 
 
-## Usage
-
-See the [demo here](https://plnkr.co/edit/3QbdTUWfWjf4cVTzaJmx?p=preview)
-
-### Basic
+## Basic Usage
 
 ```javascript
 import React, {Component} from 'react';
@@ -29,3 +25,5 @@ class App extends Component {
 }
 
 ```
+
+See the [demo here](https://plnkr.co/edit/3QbdTUWfWjf4cVTzaJmx?p=preview)
