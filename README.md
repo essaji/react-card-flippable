@@ -1,6 +1,9 @@
 # React Card Flippable
 
+
 ## Usage
+
+See the [demo here][https://plnkr.co/edit/3QbdTUWfWjf4cVTzaJmx?p=preview]
 
 ### Basic
 
@@ -15,7 +18,7 @@ class App extends Component {
 
         let title = "Today News";
         let description = "Today is nice weather in Abu Dhabi";
-        let thumbnailUrl = "http://www.girlsgetaway.com/wp-content/uploads/2014/05/abu3_300x350.jpg";
+        let thumbnailUrl = "http://oi65.tinypic.com/28unxug.jpg";
 
         return (
             <div>
