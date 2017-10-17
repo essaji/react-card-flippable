@@ -32,6 +32,28 @@ class App extends Component {
 
 See the [demo here](https://plnkr.co/edit/3QbdTUWfWjf4cVTzaJmx?p=preview)
 
+Or you might wanna replace the whole front end content.
+
+```javascript
+import React, {Component} from 'react';
+import CardFlippable from 'react-card-flippable';
+
+class App extends Component {
+
+    render() {
+
+        const frontContent = <div><h3>Front content goes here</h3></div>;
+        const backContent = <div><h3>Back content goes here</h3></div>;
+
+        return (
+            <div>
+                <CardFlippable frontContent={frontContent} backContent={backContent} />
+            </div>
+        );
+    }
+}
+```
+
 ## Properties
 
 | Props        | Type    | Description                                                                                               |
